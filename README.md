@@ -115,6 +115,18 @@ To get a local copy up and running, follow these simple steps.
 - `npm run preview`: Serves the production build locally for preview.
 - `npm run lint`: Lints the project files.
 
+## Try It Online
+
+You can access the application at:
+
+https://zingy-hamster-0539d7.netlify.app/
+
+If the app does not respond immediately, please **wake up the server first** by visiting:
+
+https://listify-xqfy.onrender.com/
+
+The server may be shut down automatically due to free-tier limitations, so the first request might take some time.
+
 ## API Endpoints
 
 The backend exposes the following RESTful API endpoints under the base path `/api/v1/items`.
