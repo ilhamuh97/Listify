@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "npx tsc",
+    "build": "tsc",
     "start": "node dist/server.js",
     "dev": "nodemon src/server.ts",
     "lint": "eslint 'src/**/*.ts'"
