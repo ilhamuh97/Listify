@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
-import express, { Request, Response } from 'express';
+import express, { NextFunction, Request, Response } from 'express';
 import cors from 'cors';
 import createHttpError from 'http-errors';
 
@@ -20,7 +20,7 @@ app.use(
 // Routes
 app.use('/api/v1/items', shoppingItemRoutes);
 
-app.use((req: Request, res: Response, next) => {
+app.use((req: Request, res: Response, next: NextFunction) => {
   next(createHttpError(404));
 });
 
